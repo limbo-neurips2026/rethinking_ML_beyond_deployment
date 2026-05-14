@@ -45,6 +45,36 @@ title = "Beyond Time-Zero Performance @ NeurIPS 2026"
     line-height: 1.45;
 }
 
+.speaker-grid {
+    gap: 2.5rem 1.5rem;
+}
+
+.speaker-grid .person-card {
+    background: transparent;
+    border: 0;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.speaker-photo {
+    width: min(220px, 64vw);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.speaker-grid .person-card h4 {
+    font-size: clamp(1.45rem, 4.8vw, 2rem);
+    margin-bottom: 0.6rem;
+}
+
+.speaker-grid .person-affiliation {
+    color: #333;
+    font-size: 1rem;
+}
+
 #schedule table td:first-child,
 #schedule table th:first-child {
     white-space: nowrap;
@@ -221,13 +251,13 @@ Proceedings-track and Datasets & Benchmarks papers are planned for a dedicated P
 
 ## Confirmed Speakers {#confirmed-speakers}
 
-<div class="people-grid">
-<div class="person-card"><h4>Irene Chen</h4><p class="person-affiliation">UC Berkeley, US</p><p class="person-role">Speaker & Panelist</p></div>
-<div class="person-card"><h4>Enzo Ferrante</h4><p class="person-affiliation">Universidad de Buenos Aires, AR</p><p class="person-role">Speaker & Panelist</p></div>
-<div class="person-card"><h4>Razvan Pascanu</h4><p class="person-affiliation">Google DeepMind and Mila, UK</p><p class="person-role">Speaker & Panelist</p></div>
-<div class="person-card"><h4>Olivier Salvado</h4><p class="person-affiliation">Queensland University of Technology, AU</p><p class="person-role">Speaker & Panelist</p></div>
-<div class="person-card"><h4>Yarin Gal</h4><p class="person-affiliation">University of Oxford, UK</p><p class="person-role">Speaker & Panelist</p></div>
-<div class="person-card"><h4>Melissa McCradden</h4><p class="person-affiliation">University of Adelaide, AU</p><p class="person-role">Speaker & Panelist</p></div>
+<div class="people-grid speaker-grid">
+<div class="person-card"><img class="speaker-photo" src="img/speakers/irene-chen.jpeg" alt="Irene Chen"><h4>Irene Chen</h4><p class="person-affiliation">UC Berkeley, US</p><p class="person-role">Speaker & Panelist</p></div>
+<div class="person-card"><img class="speaker-photo" src="img/speakers/enzo-ferrante.jpeg" alt="Enzo Ferrante"><h4>Enzo Ferrante</h4><p class="person-affiliation">Universidad de Buenos Aires, AR</p><p class="person-role">Speaker & Panelist</p></div>
+<div class="person-card"><img class="speaker-photo" src="img/speakers/razvan-pascanu.jpeg" alt="Razvan Pascanu"><h4>Razvan Pascanu</h4><p class="person-affiliation">Google DeepMind and Mila, UK</p><p class="person-role">Speaker & Panelist</p></div>
+<div class="person-card"><img class="speaker-photo" src="img/speakers/olivier-salvado.jpeg" alt="Olivier Salvado"><h4>Olivier Salvado</h4><p class="person-affiliation">Queensland University of Technology, AU</p><p class="person-role">Speaker & Panelist</p></div>
+<div class="person-card"><img class="speaker-photo" src="img/speakers/yarin-gal.jpeg" alt="Yarin Gal"><h4>Yarin Gal</h4><p class="person-affiliation">University of Oxford, UK</p><p class="person-role">Speaker & Panelist</p></div>
+<div class="person-card"><img class="speaker-photo" src="img/speakers/melissa-mccradden.webp" alt="Melissa McCradden"><h4>Melissa McCradden</h4><p class="person-affiliation">University of Adelaide, AU</p><p class="person-role">Speaker & Panelist</p></div>
 </div>
 
 </section>
