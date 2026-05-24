@@ -328,7 +328,7 @@ Accepted papers in the Proceedings Track and the Datasets & Benchmarks Track wil
 We are also in discussion with TMLR for an editorial that summarizes the scientific outcomes of the workshop and the research agenda it sets for adaptable, auditable, and interactive machine learning in healthcare.
 
 <div class="proceedings-grid">
-<div class="proceedings-card"><div class="proceedings-mark">PMLR</div><h4>Dedicated Workshop Volume</h4><p class="proceedings-note">Confirmed for Proceedings Track papers and a distinct Datasets & Benchmarks section.</p></div>
+<div class="proceedings-card"><img class="proceedings-logo" src="img/proceedings/logo-pmlr.svg" alt="PMLR logo"><h4>Dedicated Workshop Volume</h4><p class="proceedings-note">Confirmed for Proceedings Track papers and a distinct Datasets & Benchmarks section.</p></div>
 <div class="proceedings-card"><img class="proceedings-logo" src="img/proceedings/tmlr.jpg" alt="TMLR logo"><h4>Editorial Discussion</h4><p class="proceedings-note">Potential editorial summarizing workshop outcomes and the resulting research agenda.</p></div>
 </div>
 
