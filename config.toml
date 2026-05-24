@@ -2,8 +2,8 @@ base_url = "https://cristinaperez9.github.io/beyond_time_zero_performance.github
 compile_sass = true
 minify_html = true
 
-title = "Beyond Time-Zero Performance (NeurIPS 2026 Workshop)"
-description = "Official website for the NeurIPS 2026 workshop on adaptable and interactive machine learning in healthcare."
+title = "LIMBO: Living Clinical Models (NeurIPS 2026 Workshop)"
+description = "Official website for LIMBO, the NeurIPS 2026 workshop on living clinical models and machine learning beyond deployment."
 default_language = "en"
 theme = "academic-workshop"
 
@@ -15,8 +15,8 @@ theme = "github-light"
 [extra]
 # Hero header (use block tables instead of inline)
 [extra.title]
-title = "Beyond Time-Zero Performance"
-subtitles = ["Towards Adaptable and Interactive Machine Learning in Healthcare", "NeurIPS 2026 Workshop"]
+title = "LIMBO"
+subtitles = ["Living Clinical Models: Rethinking Machine Learning Beyond Deployment", "NeurIPS 2026 Workshop"]
 
 [[extra.header_pages]]
 name = "About"
@@ -33,6 +33,10 @@ url  = "#call-for-papers"
 [[extra.header_pages]]
 name = "Accepted Papers"
 url  = "#accepted-papers"
+
+[[extra.header_pages]]
+name = "Proceedings"
+url  = "#proceedings"
 
 [[extra.header_pages]]
 name = "Awards"
@@ -53,6 +57,10 @@ url  = "#organizers"
 [[extra.header_pages]]
 name = "PC"
 url  = "#program-committee"
+
+[[extra.header_pages]]
+name = "Sponsors"
+url  = "#sponsors"
 
 
 

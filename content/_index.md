@@ -1,12 +1,15 @@
 +++
-title = "Beyond Time-Zero Performance @ NeurIPS 2026"
+title = "LIMBO: Living Clinical Models @ NeurIPS 2026"
 +++
 
 <style>
 .topic-grid,
 .track-grid,
 .people-grid,
-.advisor-grid {
+.advisor-grid,
+.award-grid,
+.sponsor-grid,
+.proceedings-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -16,7 +19,10 @@ title = "Beyond Time-Zero Performance @ NeurIPS 2026"
 .topic-card,
 .track-card,
 .person-card,
-.advisor-card {
+.advisor-card,
+.award-card,
+.sponsor-card,
+.proceedings-card {
     background: rgba(255, 255, 255, 0.62);
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 8px;
@@ -26,20 +32,29 @@ title = "Beyond Time-Zero Performance @ NeurIPS 2026"
 .topic-card h4,
 .track-card h4,
 .person-card h4,
-.advisor-card h4 {
+.advisor-card h4,
+.award-card h4,
+.sponsor-card h4,
+.proceedings-card h4 {
     margin: 0 0 0.35rem;
 }
 
 .topic-card p,
 .track-card p,
 .person-card p,
-.advisor-card p {
+.advisor-card p,
+.award-card p,
+.sponsor-card p,
+.proceedings-card p {
     margin: 0;
 }
 
 .person-role,
 .person-affiliation,
-.advisor-affiliation {
+.advisor-affiliation,
+.award-status,
+.sponsor-note,
+.proceedings-note {
     color: #666;
     font-size: 0.92rem;
     line-height: 1.45;
@@ -140,11 +155,53 @@ title = "Beyond Time-Zero Performance @ NeurIPS 2026"
     color: #666;
 }
 
+.award-card {
+    text-align: center;
+}
+
+.award-card h4 {
+    font-size: clamp(1.15rem, 3.5vw, 1.45rem);
+}
+
+.award-status {
+    margin-top: 0.75rem;
+    font-style: italic;
+}
+
+.sponsor-card {
+    text-align: center;
+}
+
+.sponsor-logo {
+    display: block;
+    max-width: min(220px, 64vw);
+    max-height: 120px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+}
+
+.proceedings-mark {
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: inline-flex;
+    font-size: 1.4rem;
+    font-weight: 700;
+    justify-content: center;
+    margin-bottom: 0.9rem;
+    min-height: 4rem;
+    min-width: 8rem;
+    padding: 0.5rem 1rem;
+}
+
 @media (min-width: 760px) {
     .topic-grid,
     .track-grid,
     .people-grid,
-    .advisor-grid {
+    .advisor-grid,
+    .award-grid,
+    .sponsor-grid,
+    .proceedings-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -169,7 +226,7 @@ title = "Beyond Time-Zero Performance @ NeurIPS 2026"
 
 Standard ML evaluation assumes a stationary world: a fixed test distribution, a fixed dataset, and a fixed notion of correctness. Deployed clinical systems violate all three. Patient populations drift, hardware and protocols evolve, individual records may need to be removed, and clinician feedback continually reshapes what counts as a correct prediction.
 
-This workshop brings together researchers working on adaptable, maintainable, and interactive machine learning systems for healthcare. We focus on post-deployment behavior: models that can adapt under distribution shift, support verifiable unlearning, expose uncertainty, and be audited or corrected through human feedback without destabilizing learned behavior.
+LIMBO brings together researchers working on adaptable, maintainable, and interactive machine learning systems for healthcare. We focus on post-deployment behavior: models that can adapt under distribution shift, support verifiable unlearning, expose uncertainty, and be audited or corrected through human feedback without destabilizing learned behavior.
 
 Our goal is to build shared problem formulations, evaluation protocols, and benchmarks for healthcare ML systems that change over time. The workshop is method-first, with healthcare as the stress test: data scarcity, privacy withdrawal, clinical oversight, safety constraints, and regulation make post-deployment reliability unavoidable.
 
@@ -200,7 +257,6 @@ Please note that all deadlines are Anywhere on Earth (AOE). Dates will be update
 - **Submission deadline:** To be announced
 - **Author notification:** Before September 29, 2026
 - **Workshop date:** To be announced
-- **Expected attendance:** Approximately 300 attendees
 
 ### Format
 
@@ -255,9 +311,37 @@ Proceedings-track and Datasets & Benchmarks papers are planned for a dedicated P
 
 ---
 
+<section id="proceedings">
+
+## Proceedings {#proceedings}
+
+Accepted papers in the Proceedings Track and the Datasets & Benchmarks Track will be included in a dedicated PMLR workshop volume. The volume will include a distinct Datasets & Benchmarks section for curated datasets, standardized post-deployment evaluation protocols, reproducible benchmarks, and baselines.
+
+We are also in discussion with TMLR for an editorial that summarizes the scientific outcomes of the workshop and the research agenda it sets for adaptable, auditable, and interactive machine learning in healthcare.
+
+<div class="proceedings-grid">
+<div class="proceedings-card"><div class="proceedings-mark">PMLR</div><h4>Dedicated Workshop Volume</h4><p class="proceedings-note">Confirmed for Proceedings Track papers and a distinct Datasets & Benchmarks section.</p></div>
+<div class="proceedings-card"><div class="proceedings-mark">TMLR</div><h4>Editorial Discussion</h4><p class="proceedings-note">Potential editorial summarizing workshop outcomes and the resulting research agenda.</p></div>
+</div>
+
+</section>
+
+---
+
 <section id="awards">
 
 ## Awards {#awards}
+
+We plan to recognize outstanding contributions and reviewing through the following awards. Awardees will be announced after the workshop review and presentation process.
+
+<div class="award-grid">
+<div class="award-card"><h4>Best Paper Award</h4><p>Recognizing the strongest accepted contribution to post-deployment machine learning for healthcare.</p><p class="award-status">Awardee to be announced.</p></div>
+<div class="award-card"><h4>Best Paper Runner-Up</h4><p>Recognizing an additional outstanding accepted contribution from the workshop program.</p><p class="award-status">Awardee to be announced.</p></div>
+<div class="award-card"><h4>Best Reviewer Award</h4><p>Recognizing exceptional reviewing quality, constructiveness, and service to the double-blind review process.</p><p class="award-status">Awardee to be announced.</p></div>
+<div class="award-card"><h4>Best Reviewer Runner-Up</h4><p>Recognizing an additional reviewer whose feedback substantially supports authors and the program committee.</p><p class="award-status">Awardee to be announced.</p></div>
+</div>
+
+Subject to sponsor support, awards may include a monetary prize or sponsored registration/travel support. We also aim to provide attendance support awards for students and early-career researchers with financial need, prioritizing applicants from underrepresented or under-resourced backgrounds.
 
 </section>
 
@@ -267,24 +351,27 @@ Proceedings-track and Datasets & Benchmarks papers are planned for a dedicated P
 
 ## Schedule {#schedule}
 
-| Time | Session | Lead / Speaker |
+| Time | Theme / Session | Lead / Speaker |
 | --- | --- | --- |
 | 09:00-09:15 | Opening Remarks | Organizers |
-| 09:15-09:35 | Invited Talk I | Irene Chen |
-| 09:40-10:00 | Invited Talk II | Enzo Ferrante |
-| 10:00-10:10 | Spotlight Talk I - Selected Submission | Presenter 1 |
-| 10:10-10:20 | Spotlight Talk II - Selected Submission | Presenter 2 |
-| 10:20-11:00 | Coffee Break & Poster Session I | Poster Presenters |
-| 11:00-11:20 | Invited Talk III | Razvan Pascanu |
-| 11:25-11:45 | Invited Talk IV | Olivier Salvado |
-| 11:45-12:30 | Panel Discussion: Challenges of Deploying and Adapting Healthcare AI | Moderators / Panelists |
-| 12:30-14:00 | Lunch & Networking | - |
-| 14:00-14:20 | Invited Talk V | Yarin Gal |
+| 09:15-10:30 | ML adaptation & uncertainty | Theme block |
+| 09:15-09:35 | Invited Talk I | Razvan Pascanu |
+| 09:40-10:00 | Invited Talk II | Yarin Gal |
+| 10:00-10:15 | Spotlight Talk I - Selected Submission | Presenter 1 |
+| 10:15-10:30 | Spotlight Talk II - Selected Submission | Presenter 2 |
+| 10:30-11:15 | Coffee Break & Poster Session I | Poster Presenters |
+| 11:15-12:50 | Clinical deployment under shift | Theme block |
+| 11:15-11:35 | Invited Talk III | Enzo Ferrante |
+| 11:40-12:00 | Invited Talk IV | Olivier Salvado |
+| 12:05-12:50 | Panel Discussion | Moderators / Panelists |
+| 12:50-14:00 | Lunch & Networking | - |
+| 14:00-15:15 | Auditing dynamic clinical ML | Theme block |
+| 14:00-14:20 | Invited Talk V | Irene Chen |
 | 14:25-14:45 | Invited Talk VI | Melissa McCradden |
-| 14:45-14:55 | Spotlight Talk III - Selected Submission | Presenter 3 |
-| 14:55-15:05 | Spotlight Talk IV - Selected Submission | Presenter 4 |
-| 15:05-15:45 | Coffee Break & Poster Session II | Poster Presenters |
-| 15:45-16:15 | Open Q&A and Discussion | Session Chair |
+| 14:45-15:00 | Spotlight Talk III - Selected Submission | Presenter 3 |
+| 15:00-15:15 | Spotlight Talk IV - Selected Submission | Presenter 4 |
+| 15:15-16:00 | Coffee Break & Poster Session II | Poster Presenters |
+| 16:00-16:15 | Open Q&A and Discussion | Session Chair |
 | 16:15-16:30 | Closing Remarks & Awards | Organizers |
 
 </section>
@@ -316,7 +403,7 @@ Proceedings-track and Datasets & Benchmarks papers are planned for a dedicated P
 <div class="person-card"><img class="organizer-photo" src="img/organizers/cristina-almagro-perez.jpeg" alt="Cristina Almagro-Perez"><h4>Cristina Almagro-Perez</h4><p class="person-affiliation">Harvard-MIT Health Sciences and Technology; Brigham and Women's Hospital, US</p><p class="person-role">Operations & Program Delivery Chair</p></div>
 <div class="person-card"><img class="organizer-photo" src="img/organizers/sonia-laguna.jpeg" alt="Sonia Laguna"><h4>Sonia Laguna</h4><p class="person-affiliation">Apple; ETH Zurich; Max Planck Institute, FR/CH/DE</p><p class="person-role">Executive Co-Chair & Scientific Co-Chair</p></div>
 <div class="person-card"><img class="organizer-photo" src="img/organizers/silke-muehlstedt.jpeg" alt="Silke Muehlstedt"><h4>Silke Muehlstedt</h4><p class="person-affiliation">ETH Zurich, CH</p><p class="person-role">Strategy, External Relations & Sponsorship Chair</p></div>
-<div class="person-card"><h4>Tingrui "Ricky" Qiao</h4><p class="person-affiliation">University of Auckland, NZ</p><p class="person-role">Program Committee Chair</p></div>
+<div class="person-card"><img class="organizer-photo" src="img/organizers/ricky-qiao.jpeg" alt="Tingrui Ricky Qiao"><h4>Tingrui "Ricky" Qiao</h4><p class="person-affiliation">University of Auckland, NZ</p><p class="person-role">Program Committee Chair</p></div>
 <div class="person-card"><img class="organizer-photo" src="img/organizers/samuel-ruiperez-campillo.jpeg" alt="Samuel Ruiperez-Campillo"><h4>Samuel Ruiperez-Campillo</h4><p class="person-affiliation">MIT Institute for Medical Engineering and Science, US</p><p class="person-role">Executive Co-Chair & Scientific Co-Chair</p></div>
 </div>
 
@@ -337,46 +424,7 @@ Proceedings-track and Datasets & Benchmarks papers are planned for a dedicated P
 
 ## Program Committee Members {#program-committee}
 
-<div class="pc-grid">
-<div class="pc-member"><strong>Andrea Agostini</strong>, <span class="pc-affiliation">ETH Zurich</span></div>
-<div class="pc-member"><strong>Fabricio Arrend Torres</strong>, <span class="pc-affiliation">Rekonas</span></div>
-<div class="pc-member"><strong>Sabyasachi Bandyopadhyay</strong>, <span class="pc-affiliation">Stanford University</span></div>
-<div class="pc-member"><strong>Alice Bizeul</strong>, <span class="pc-affiliation">Apple</span></div>
-<div class="pc-member"><strong>Irene Cannistraci</strong>, <span class="pc-affiliation">ETH Zurich</span></div>
-<div class="pc-member"><strong>Maria Cervera de la Rosa</strong>, <span class="pc-affiliation">Apple</span></div>
-<div class="pc-member"><strong>Daphne Chopard</strong>, <span class="pc-affiliation">ETH Zurich</span></div>
-<div class="pc-member"><strong>Kasia Cobalczyk</strong>, <span class="pc-affiliation">University of Cambridge</span></div>
-<div class="pc-member"><strong>Imant Daunhawer</strong>, <span class="pc-affiliation">kaiko.ai</span></div>
-<div class="pc-member"><strong>Prasanth Ganesan</strong>, <span class="pc-affiliation">Stanford University</span></div>
-<div class="pc-member"><strong>Robin Geyer</strong>, <span class="pc-affiliation">ETH Zurich</span></div>
-<div class="pc-member"><strong>Jorge da Silva Goncalves</strong>, <span class="pc-affiliation">ETH Zurich</span></div>
-<div class="pc-member"><strong>Francesco Ignazio Re</strong>, <span class="pc-affiliation">UN Operations Crisis Centre</span></div>
-<div class="pc-member"><strong>Giulia Lanzillotta</strong>, <span class="pc-affiliation">RIKEN Tokyo</span></div>
-<div class="pc-member"><strong>Sonia Laguna</strong>, <span class="pc-affiliation">ETH Zurich</span></div>
-<div class="pc-member"><strong>Heike Leutheuser</strong>, <span class="pc-affiliation">University of Bayreuth</span></div>
-<div class="pc-member"><strong>Laura Manduchi</strong>, <span class="pc-affiliation">Apple</span></div>
-<div class="pc-member"><strong>Ricards Marcinkevics</strong>, <span class="pc-affiliation">Zalando Data Science</span></div>
-<div class="pc-member"><strong>Yang Meng</strong>, <span class="pc-affiliation">UC Irvine</span></div>
-<div class="pc-member"><strong>Marcello Negri</strong>, <span class="pc-affiliation">University of Basel</span></div>
-<div class="pc-member"><strong>Alizee Pace</strong>, <span class="pc-affiliation">Google DeepMind</span></div>
-<div class="pc-member"><strong>Emanuele Palumbo</strong>, <span class="pc-affiliation">Apple</span></div>
-<div class="pc-member"><strong>Michael Reiss</strong>, <span class="pc-affiliation">UC San Diego</span></div>
-<div class="pc-member"><strong>Miguel Rodrigo</strong>, <span class="pc-affiliation">University of Valencia</span></div>
-<div class="pc-member"><strong>Alain Ryser</strong>, <span class="pc-affiliation">ETH Zurich</span></div>
-<div class="pc-member"><strong>Maxim Samarin</strong>, <span class="pc-affiliation">Swiss Data Science Center</span></div>
-<div class="pc-member"><strong>Simon Schug</strong>, <span class="pc-affiliation">New York University</span></div>
-<div class="pc-member"><strong>Farrin Sofian</strong>, <span class="pc-affiliation">UC Irvine</span></div>
-<div class="pc-member"><strong>Robin Van de Water</strong>, <span class="pc-affiliation">Hasso Plattner Institute</span></div>
-<div class="pc-member"><strong>Moritz Vandenhirtz</strong>, <span class="pc-affiliation">ETH Zurich</span></div>
-<div class="pc-member"><strong>Mario Wieser</strong>, <span class="pc-affiliation">Genedata</span></div>
-<div class="pc-member"><strong>Justus Will</strong>, <span class="pc-affiliation">UC Irvine</span></div>
-<div class="pc-member"><strong>Simon Bohi</strong>, <span class="pc-affiliation">University of Basel</span></div>
-<div class="pc-member"><strong>Paul Fischer</strong>, <span class="pc-affiliation">University of Basel</span></div>
-<div class="pc-member"><strong>Sergio Munoz-Gonzalez</strong>, <span class="pc-affiliation">University of Basel</span></div>
-<div class="pc-member"><strong>Simon Pezold</strong>, <span class="pc-affiliation">University of Basel</span></div>
-<div class="pc-member"><strong>Sonali Andani</strong>, <span class="pc-affiliation">ETH Zurich</span></div>
-<div class="pc-member"><strong>Melanie Roschewitz</strong>, <span class="pc-affiliation">ETH Zurich</span></div>
-</div>
+To be included after double-blind review.
 
 </section>
 
@@ -387,5 +435,20 @@ Proceedings-track and Datasets & Benchmarks papers are planned for a dedicated P
 ## Contact {#contact}
 
 - General inquiries: <calmagroperez@hst.harvard.edu>
+
+</section>
+
+---
+
+<section id="sponsors">
+
+## Sponsors {#sponsors}
+
+We gratefully acknowledge the support of our sponsors. Sponsor funds will go directly toward workshop awards and participant support.
+
+<div class="sponsor-grid">
+<div class="sponsor-card"><img class="sponsor-logo" src="img/quantco_logo.png" alt="QuantCo logo"><h4>QuantCo</h4><p class="sponsor-note">Confirmed sponsor supporting awards and participant support.</p></div>
+<div class="sponsor-card"><h4>Additional Sponsorship</h4><p class="sponsor-note">Additional support is under discussion and will be added here once confirmed.</p></div>
+</div>
 
 </section>
