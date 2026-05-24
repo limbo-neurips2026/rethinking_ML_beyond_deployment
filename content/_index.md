@@ -180,6 +180,14 @@ title = "LIMBO: Living Clinical Models @ NeurIPS 2026"
     margin: 0 auto 1rem;
 }
 
+.proceedings-logo {
+    display: block;
+    max-width: min(220px, 64vw);
+    max-height: 120px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+}
+
 .proceedings-mark {
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -321,7 +329,7 @@ We are also in discussion with TMLR for an editorial that summarizes the scienti
 
 <div class="proceedings-grid">
 <div class="proceedings-card"><div class="proceedings-mark">PMLR</div><h4>Dedicated Workshop Volume</h4><p class="proceedings-note">Confirmed for Proceedings Track papers and a distinct Datasets & Benchmarks section.</p></div>
-<div class="proceedings-card"><div class="proceedings-mark">TMLR</div><h4>Editorial Discussion</h4><p class="proceedings-note">Potential editorial summarizing workshop outcomes and the resulting research agenda.</p></div>
+<div class="proceedings-card"><img class="proceedings-logo" src="img/proceedings/tmlr.jpg" alt="TMLR logo"><h4>Editorial Discussion</h4><p class="proceedings-note">Potential editorial summarizing workshop outcomes and the resulting research agenda.</p></div>
 </div>
 
 </section>
